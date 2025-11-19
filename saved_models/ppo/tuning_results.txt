@@ -1,0 +1,45 @@
+PPO Hyperparameter Tuning Results
+============================================================
+
+Configuration 1:
+  {'learning_rate': 0.0003, 'n_steps': 2048, 'batch_size': 64, 'n_epochs': 10, 'gamma': 0.99}
+  Avg Reward: 5722.00
+
+Configuration 2:
+  {'learning_rate': 0.0001, 'n_steps': 2048, 'batch_size': 64, 'n_epochs': 10, 'gamma': 0.99}
+  Avg Reward: 5810.00
+
+Configuration 3:
+  {'learning_rate': 0.0005, 'n_steps': 2048, 'batch_size': 64, 'n_epochs': 10, 'gamma': 0.99}
+  Avg Reward: 5544.00
+
+Configuration 4:
+  {'learning_rate': 0.0003, 'n_steps': 4096, 'batch_size': 64, 'n_epochs': 10, 'gamma': 0.99}
+  Avg Reward: 4660.00
+
+Configuration 5:
+  {'learning_rate': 0.0003, 'n_steps': 2048, 'batch_size': 128, 'n_epochs': 10, 'gamma': 0.99}
+  Avg Reward: 4914.00
+
+Configuration 6:
+  {'learning_rate': 0.0003, 'n_steps': 2048, 'batch_size': 64, 'n_epochs': 20, 'gamma': 0.99}
+  Avg Reward: 4886.00
+
+Configuration 7:
+  {'learning_rate': 0.0003, 'n_steps': 2048, 'batch_size': 64, 'n_epochs': 10, 'gamma': 0.95}
+  Avg Reward: 5634.00
+
+Configuration 8:
+  {'learning_rate': 0.0003, 'n_steps': 2048, 'batch_size': 64, 'n_epochs': 10, 'gamma': 0.995}
+  Avg Reward: 4650.00
+
+Configuration 9:
+  {'learning_rate': 0.0001, 'n_steps': 4096, 'batch_size': 128, 'n_epochs': 15, 'gamma': 0.995}
+  Avg Reward: 5438.00
+
+Configuration 10:
+  {'learning_rate': 0.0005, 'n_steps': 1024, 'batch_size': 32, 'n_epochs': 5, 'gamma': 0.95}
+  Avg Reward: 7744.00
+
+
+Best: Configuration 10

@@ -1,0 +1,561 @@
+[
+    {
+        "label": "gymnasium",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "gymnasium",
+        "description": "gymnasium",
+        "detail": "gymnasium",
+        "documentation": {}
+    },
+    {
+        "label": "spaces",
+        "importPath": "gymnasium",
+        "description": "gymnasium",
+        "isExtraImport": true,
+        "detail": "gymnasium",
+        "documentation": {}
+    },
+    {
+        "label": "numpy",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "numpy",
+        "description": "numpy",
+        "detail": "numpy",
+        "documentation": {}
+    },
+    {
+        "label": "IntEnum",
+        "importPath": "enum",
+        "description": "enum",
+        "isExtraImport": true,
+        "detail": "enum",
+        "documentation": {}
+    },
+    {
+        "label": "IntEnum",
+        "importPath": "enum",
+        "description": "enum",
+        "isExtraImport": true,
+        "detail": "enum",
+        "documentation": {}
+    },
+    {
+        "label": "register",
+        "importPath": "gymnasium.envs.registration",
+        "description": "gymnasium.envs.registration",
+        "isExtraImport": true,
+        "detail": "gymnasium.envs.registration",
+        "documentation": {}
+    },
+    {
+        "label": "healthcare_env",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "healthcare_env",
+        "description": "healthcare_env",
+        "detail": "healthcare_env",
+        "documentation": {}
+    },
+    {
+        "label": "matplotlib.pyplot",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "matplotlib.pyplot",
+        "description": "matplotlib.pyplot",
+        "detail": "matplotlib.pyplot",
+        "documentation": {}
+    },
+    {
+        "label": "A2C",
+        "importPath": "stable_baselines3",
+        "description": "stable_baselines3",
+        "isExtraImport": true,
+        "detail": "stable_baselines3",
+        "documentation": {}
+    },
+    {
+        "label": "DQN",
+        "importPath": "stable_baselines3",
+        "description": "stable_baselines3",
+        "isExtraImport": true,
+        "detail": "stable_baselines3",
+        "documentation": {}
+    },
+    {
+        "label": "PPO",
+        "importPath": "stable_baselines3",
+        "description": "stable_baselines3",
+        "isExtraImport": true,
+        "detail": "stable_baselines3",
+        "documentation": {}
+    },
+    {
+        "label": "EvalCallback",
+        "importPath": "stable_baselines3.common.callbacks",
+        "description": "stable_baselines3.common.callbacks",
+        "isExtraImport": true,
+        "detail": "stable_baselines3.common.callbacks",
+        "documentation": {}
+    },
+    {
+        "label": "CheckpointCallback",
+        "importPath": "stable_baselines3.common.callbacks",
+        "description": "stable_baselines3.common.callbacks",
+        "isExtraImport": true,
+        "detail": "stable_baselines3.common.callbacks",
+        "documentation": {}
+    },
+    {
+        "label": "EvalCallback",
+        "importPath": "stable_baselines3.common.callbacks",
+        "description": "stable_baselines3.common.callbacks",
+        "isExtraImport": true,
+        "detail": "stable_baselines3.common.callbacks",
+        "documentation": {}
+    },
+    {
+        "label": "CheckpointCallback",
+        "importPath": "stable_baselines3.common.callbacks",
+        "description": "stable_baselines3.common.callbacks",
+        "isExtraImport": true,
+        "detail": "stable_baselines3.common.callbacks",
+        "documentation": {}
+    },
+    {
+        "label": "EvalCallback",
+        "importPath": "stable_baselines3.common.callbacks",
+        "description": "stable_baselines3.common.callbacks",
+        "isExtraImport": true,
+        "detail": "stable_baselines3.common.callbacks",
+        "documentation": {}
+    },
+    {
+        "label": "CheckpointCallback",
+        "importPath": "stable_baselines3.common.callbacks",
+        "description": "stable_baselines3.common.callbacks",
+        "isExtraImport": true,
+        "detail": "stable_baselines3.common.callbacks",
+        "documentation": {}
+    },
+    {
+        "label": "Monitor",
+        "importPath": "stable_baselines3.common.monitor",
+        "description": "stable_baselines3.common.monitor",
+        "isExtraImport": true,
+        "detail": "stable_baselines3.common.monitor",
+        "documentation": {}
+    },
+    {
+        "label": "Monitor",
+        "importPath": "stable_baselines3.common.monitor",
+        "description": "stable_baselines3.common.monitor",
+        "isExtraImport": true,
+        "detail": "stable_baselines3.common.monitor",
+        "documentation": {}
+    },
+    {
+        "label": "Monitor",
+        "importPath": "stable_baselines3.common.monitor",
+        "description": "stable_baselines3.common.monitor",
+        "isExtraImport": true,
+        "detail": "stable_baselines3.common.monitor",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "torch",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "torch",
+        "description": "torch",
+        "detail": "torch",
+        "documentation": {}
+    },
+    {
+        "label": "torch.nn",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "torch.nn",
+        "description": "torch.nn",
+        "detail": "torch.nn",
+        "documentation": {}
+    },
+    {
+        "label": "torch.optim",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "torch.optim",
+        "description": "torch.optim",
+        "detail": "torch.optim",
+        "documentation": {}
+    },
+    {
+        "label": "deque",
+        "importPath": "collections",
+        "description": "collections",
+        "isExtraImport": true,
+        "detail": "collections",
+        "documentation": {}
+    },
+    {
+        "label": "pygame",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pygame",
+        "description": "pygame",
+        "detail": "pygame",
+        "documentation": {}
+    },
+    {
+        "label": "RiskLevel",
+        "kind": 6,
+        "importPath": "healthcare_env",
+        "description": "healthcare_env",
+        "peekOfCode": "class RiskLevel(IntEnum):\n    \"\"\"Patient risk levels for varicose veins\"\"\"\n    LOW = 0\n    MEDIUM = 1\n    HIGH = 2\n    SEVERE = 3\nclass HealthcareEnvironment(gym.Env):\n    \"\"\"\n    Healthcare Resource Allocation Environment\n    Observation Space:",
+        "detail": "healthcare_env",
+        "documentation": {}
+    },
+    {
+        "label": "HealthcareEnvironment",
+        "kind": 6,
+        "importPath": "healthcare_env",
+        "description": "healthcare_env",
+        "peekOfCode": "class HealthcareEnvironment(gym.Env):\n    \"\"\"\n    Healthcare Resource Allocation Environment\n    Observation Space:\n        - Day (0-89): Current day of simulation\n        - Budget remaining (0-10000): Dollars left\n        - Nurses available (0-5): Staff count\n        - Mobile units available (0-2): Equipment count\n        - Doppler machines available (0-3): Equipment count\n        - Patient queue (next 5 patients): Each has [risk_level, symptoms, wait_days, distance]",
+        "detail": "healthcare_env",
+        "documentation": {}
+    },
+    {
+        "label": "test_random_agent",
+        "kind": 2,
+        "importPath": "test_random_agent",
+        "description": "test_random_agent",
+        "peekOfCode": "def test_random_agent(num_episodes=5, render=False):\n    \"\"\"Test the environment with random actions\"\"\"\n    env = gym.make('HealthcareEnv-v0', render_mode='human' if render else None)\n    episode_rewards = []\n    episode_lengths = []\n    detections_per_episode = []\n    severe_cases_per_episode = []\n    print(\"=\"*60)\n    print(\"TESTING RANDOM AGENT\")\n    print(\"=\"*60)",
+        "detail": "test_random_agent",
+        "documentation": {}
+    },
+    {
+        "label": "plot_results",
+        "kind": 2,
+        "importPath": "test_random_agent",
+        "description": "test_random_agent",
+        "peekOfCode": "def plot_results(rewards, detections, severe_cases):\n    \"\"\"Plot episode statistics\"\"\"\n    fig, axes = plt.subplots(1, 3, figsize=(15, 4))\n    # Rewards\n    axes[0].bar(range(1, len(rewards) + 1), rewards, color='blue', alpha=0.7)\n    axes[0].axhline(y=0, color='red', linestyle='--', linewidth=1)\n    axes[0].set_xlabel('Episode')\n    axes[0].set_ylabel('Total Reward')\n    axes[0].set_title('Episode Rewards (Random Agent)')\n    axes[0].grid(True, alpha=0.3)",
+        "detail": "test_random_agent",
+        "documentation": {}
+    },
+    {
+        "label": "test_action_space",
+        "kind": 2,
+        "importPath": "test_random_agent",
+        "description": "test_random_agent",
+        "peekOfCode": "def test_action_space():\n    \"\"\"Test all actions to ensure they work\"\"\"\n    env = gym.make('HealthcareEnv-v0')\n    obs, info = env.reset()\n    print(\"\\n\" + \"=\"*60)\n    print(\"TESTING ALL ACTIONS\")\n    print(\"=\"*60)\n    action_names = [\n        \"Screen high-risk with nurse\",\n        \"Screen medium-risk with nurse\",",
+        "detail": "test_random_agent",
+        "documentation": {}
+    },
+    {
+        "label": "train_a2c",
+        "kind": 2,
+        "importPath": "train_a2c",
+        "description": "train_a2c",
+        "peekOfCode": "def train_a2c(\n    total_timesteps=100000,\n    learning_rate=0.0007,\n    n_steps=5,\n    gamma=0.99,\n    gae_lambda=1.0,\n    ent_coef=0.0,\n    vf_coef=0.5,\n    save_name=\"a2c_model\"\n):",
+        "detail": "train_a2c",
+        "documentation": {}
+    },
+    {
+        "label": "evaluate_model",
+        "kind": 2,
+        "importPath": "train_a2c",
+        "description": "train_a2c",
+        "peekOfCode": "def evaluate_model(model_path, num_episodes=10):\n    \"\"\"Evaluate trained model\"\"\"\n    print(\"\\n\" + \"=\"*60)\n    print(\"EVALUATING A2C MODEL\")\n    print(\"=\"*60)\n    model = A2C.load(model_path)\n    env = gym.make('HealthcareEnv-v0')\n    episode_rewards = []\n    episode_detections = []\n    episode_severe = []",
+        "detail": "train_a2c",
+        "documentation": {}
+    },
+    {
+        "label": "hyperparameter_tuning",
+        "kind": 2,
+        "importPath": "train_a2c",
+        "description": "train_a2c",
+        "peekOfCode": "def hyperparameter_tuning():\n    \"\"\"Run hyperparameter tuning with 10+ configurations\"\"\"\n    print(\"\\n\" + \"=\"*60)\n    print(\"HYPERPARAMETER TUNING - A2C\")\n    print(\"Running 10 different configurations...\")\n    print(\"=\"*60)\n    configs = [\n        # Config 1: Default\n        {\"learning_rate\": 0.0007, \"n_steps\": 5, \"gamma\": 0.99, \"gae_lambda\": 1.0, \"ent_coef\": 0.0},\n        # Config 2: Lower LR",
+        "detail": "train_a2c",
+        "documentation": {}
+    },
+    {
+        "label": "train_dqn",
+        "kind": 2,
+        "importPath": "train_dqn",
+        "description": "train_dqn",
+        "peekOfCode": "def train_dqn(\n    total_timesteps=100000,\n    learning_rate=0.001,\n    buffer_size=50000,\n    learning_starts=1000,\n    batch_size=32,\n    gamma=0.99,\n    exploration_fraction=0.1,\n    exploration_final_eps=0.05,\n    target_update_interval=1000,",
+        "detail": "train_dqn",
+        "documentation": {}
+    },
+    {
+        "label": "evaluate_model",
+        "kind": 2,
+        "importPath": "train_dqn",
+        "description": "train_dqn",
+        "peekOfCode": "def evaluate_model(model_path, num_episodes=10):\n    \"\"\"Evaluate trained model\"\"\"\n    print(\"\\n\" + \"=\"*60)\n    print(\"EVALUATING DQN MODEL\")\n    print(\"=\"*60)\n    # Load model\n    model = DQN.load(model_path)\n    # Create environment\n    env = gym.make('HealthcareEnv-v0')\n    episode_rewards = []",
+        "detail": "train_dqn",
+        "documentation": {}
+    },
+    {
+        "label": "hyperparameter_tuning",
+        "kind": 2,
+        "importPath": "train_dqn",
+        "description": "train_dqn",
+        "peekOfCode": "def hyperparameter_tuning():\n    \"\"\"\n    Run multiple training runs with different hyperparameters\n    Required: At least 10 different combinations\n    \"\"\"\n    print(\"\\n\" + \"=\"*60)\n    print(\"HYPERPARAMETER TUNING - DQN\")\n    print(\"Running 10 different configurations...\")\n    print(\"=\"*60)\n    configs = [",
+        "detail": "train_dqn",
+        "documentation": {}
+    },
+    {
+        "label": "train_ppo",
+        "kind": 2,
+        "importPath": "train_ppo",
+        "description": "train_ppo",
+        "peekOfCode": "def train_ppo(\n    total_timesteps=100000,\n    learning_rate=0.0003,\n    n_steps=2048,\n    batch_size=64,\n    n_epochs=10,\n    gamma=0.99,\n    gae_lambda=0.95,\n    clip_range=0.2,\n    save_name=\"ppo_model\"",
+        "detail": "train_ppo",
+        "documentation": {}
+    },
+    {
+        "label": "evaluate_model",
+        "kind": 2,
+        "importPath": "train_ppo",
+        "description": "train_ppo",
+        "peekOfCode": "def evaluate_model(model_path, num_episodes=10):\n    \"\"\"Evaluate trained model\"\"\"\n    print(\"\\n\" + \"=\"*60)\n    print(\"EVALUATING PPO MODEL\")\n    print(\"=\"*60)\n    model = PPO.load(model_path)\n    env = gym.make('HealthcareEnv-v0')\n    episode_rewards = []\n    episode_detections = []\n    episode_severe = []",
+        "detail": "train_ppo",
+        "documentation": {}
+    },
+    {
+        "label": "hyperparameter_tuning",
+        "kind": 2,
+        "importPath": "train_ppo",
+        "description": "train_ppo",
+        "peekOfCode": "def hyperparameter_tuning():\n    \"\"\"Run hyperparameter tuning with 10+ configurations\"\"\"\n    print(\"\\n\" + \"=\"*60)\n    print(\"HYPERPARAMETER TUNING - PPO\")\n    print(\"Running 10 different configurations...\")\n    print(\"=\"*60)\n    configs = [\n        # Config 1: Default\n        {\"learning_rate\": 0.0003, \"n_steps\": 2048, \"batch_size\": 64, \"n_epochs\": 10, \"gamma\": 0.99},\n        # Config 2: Lower LR",
+        "detail": "train_ppo",
+        "documentation": {}
+    },
+    {
+        "label": "PolicyNetwork",
+        "kind": 6,
+        "importPath": "train_reinforcement",
+        "description": "train_reinforcement",
+        "peekOfCode": "class PolicyNetwork(nn.Module):\n    \"\"\"Simple neural network for policy\"\"\"\n    def __init__(self, obs_dim, action_dim, hidden_size=128):\n        super(PolicyNetwork, self).__init__()\n        self.fc1 = nn.Linear(obs_dim, hidden_size)\n        self.fc2 = nn.Linear(hidden_size, hidden_size)\n        self.fc3 = nn.Linear(hidden_size, action_dim)\n    def forward(self, x):\n        x = torch.relu(self.fc1(x))\n        x = torch.relu(self.fc2(x))",
+        "detail": "train_reinforcement",
+        "documentation": {}
+    },
+    {
+        "label": "REINFORCEAgent",
+        "kind": 6,
+        "importPath": "train_reinforcement",
+        "description": "train_reinforcement",
+        "peekOfCode": "class REINFORCEAgent:\n    \"\"\"REINFORCE algorithm implementation\"\"\"\n    def __init__(\n        self,\n        obs_dim,\n        action_dim,\n        learning_rate=0.001,\n        gamma=0.99,\n        hidden_size=128\n    ):",
+        "detail": "train_reinforcement",
+        "documentation": {}
+    },
+    {
+        "label": "train_reinforce",
+        "kind": 2,
+        "importPath": "train_reinforcement",
+        "description": "train_reinforcement",
+        "peekOfCode": "def train_reinforce(\n    total_episodes=1000,\n    learning_rate=0.001,\n    gamma=0.99,\n    hidden_size=128,\n    save_name=\"reinforce_model\"\n):\n    \"\"\"\n    Train REINFORCE agent\n    Args:",
+        "detail": "train_reinforcement",
+        "documentation": {}
+    },
+    {
+        "label": "evaluate_model",
+        "kind": 2,
+        "importPath": "train_reinforcement",
+        "description": "train_reinforcement",
+        "peekOfCode": "def evaluate_model(model_path, num_episodes=10):\n    \"\"\"Evaluate trained REINFORCE model\"\"\"\n    print(\"\\n\" + \"=\"*60)\n    print(\"EVALUATING REINFORCE MODEL\")\n    print(\"=\"*60)\n    # Create environment\n    env = gym.make('HealthcareEnv-v0')\n    # Create and load agent\n    obs_dim = env.observation_space.shape[0]\n    action_dim = env.action_space.n",
+        "detail": "train_reinforcement",
+        "documentation": {}
+    },
+    {
+        "label": "hyperparameter_tuning",
+        "kind": 2,
+        "importPath": "train_reinforcement",
+        "description": "train_reinforcement",
+        "peekOfCode": "def hyperparameter_tuning():\n    \"\"\"Run hyperparameter tuning with 10+ configurations\"\"\"\n    print(\"\\n\" + \"=\"*60)\n    print(\"HYPERPARAMETER TUNING - REINFORCE\")\n    print(\"Running 10 different configurations...\")\n    print(\"=\"*60)\n    configs = [\n        # Config 1: Default\n        {\"learning_rate\": 0.001, \"gamma\": 0.99, \"hidden_size\": 128},\n        # Config 2: Lower LR",
+        "detail": "train_reinforcement",
+        "documentation": {}
+    },
+    {
+        "label": "RiskLevel",
+        "kind": 6,
+        "importPath": "visualize",
+        "description": "visualize",
+        "peekOfCode": "class RiskLevel(IntEnum):\n    LOW = 0\n    MEDIUM = 1\n    HIGH = 2\n    SEVERE = 3\nclass HealthcareVisualizer:\n    def __init__(self, use_trained_model=False, model_path=None):\n        self.screen = pygame.display.set_mode((WINDOW_WIDTH, WINDOW_HEIGHT))\n        pygame.display.set_caption(\"AI-Veins: Healthcare Resource Allocation - Live Agent\")\n        self.clock = pygame.time.Clock()",
+        "detail": "visualize",
+        "documentation": {}
+    },
+    {
+        "label": "HealthcareVisualizer",
+        "kind": 6,
+        "importPath": "visualize",
+        "description": "visualize",
+        "peekOfCode": "class HealthcareVisualizer:\n    def __init__(self, use_trained_model=False, model_path=None):\n        self.screen = pygame.display.set_mode((WINDOW_WIDTH, WINDOW_HEIGHT))\n        pygame.display.set_caption(\"AI-Veins: Healthcare Resource Allocation - Live Agent\")\n        self.clock = pygame.time.Clock()\n        # Fonts\n        self.font_title = pygame.font.Font(None, 36)\n        self.font_large = pygame.font.Font(None, 28)\n        self.font_medium = pygame.font.Font(None, 22)\n        self.font_small = pygame.font.Font(None, 18)",
+        "detail": "visualize",
+        "documentation": {}
+    },
+    {
+        "label": "WINDOW_WIDTH",
+        "kind": 5,
+        "importPath": "visualize",
+        "description": "visualize",
+        "peekOfCode": "WINDOW_WIDTH = 1400\nWINDOW_HEIGHT = 800\nFPS = 3  # 3 actions per second (slow enough to watch)\n# Colors\nWHITE = (255, 255, 255)\nBLACK = (0, 0, 0)\nGRAY = (200, 200, 200)\nLIGHT_GRAY = (240, 240, 240)\nDARK_GRAY = (100, 100, 100)\nRED = (220, 53, 69)",
+        "detail": "visualize",
+        "documentation": {}
+    },
+    {
+        "label": "WINDOW_HEIGHT",
+        "kind": 5,
+        "importPath": "visualize",
+        "description": "visualize",
+        "peekOfCode": "WINDOW_HEIGHT = 800\nFPS = 3  # 3 actions per second (slow enough to watch)\n# Colors\nWHITE = (255, 255, 255)\nBLACK = (0, 0, 0)\nGRAY = (200, 200, 200)\nLIGHT_GRAY = (240, 240, 240)\nDARK_GRAY = (100, 100, 100)\nRED = (220, 53, 69)\nGREEN = (40, 167, 69)",
+        "detail": "visualize",
+        "documentation": {}
+    },
+    {
+        "label": "FPS",
+        "kind": 5,
+        "importPath": "visualize",
+        "description": "visualize",
+        "peekOfCode": "FPS = 3  # 3 actions per second (slow enough to watch)\n# Colors\nWHITE = (255, 255, 255)\nBLACK = (0, 0, 0)\nGRAY = (200, 200, 200)\nLIGHT_GRAY = (240, 240, 240)\nDARK_GRAY = (100, 100, 100)\nRED = (220, 53, 69)\nGREEN = (40, 167, 69)\nBLUE = (0, 123, 255)",
+        "detail": "visualize",
+        "documentation": {}
+    },
+    {
+        "label": "WHITE",
+        "kind": 5,
+        "importPath": "visualize",
+        "description": "visualize",
+        "peekOfCode": "WHITE = (255, 255, 255)\nBLACK = (0, 0, 0)\nGRAY = (200, 200, 200)\nLIGHT_GRAY = (240, 240, 240)\nDARK_GRAY = (100, 100, 100)\nRED = (220, 53, 69)\nGREEN = (40, 167, 69)\nBLUE = (0, 123, 255)\nYELLOW = (255, 193, 7)\nORANGE = (253, 126, 20)",
+        "detail": "visualize",
+        "documentation": {}
+    },
+    {
+        "label": "BLACK",
+        "kind": 5,
+        "importPath": "visualize",
+        "description": "visualize",
+        "peekOfCode": "BLACK = (0, 0, 0)\nGRAY = (200, 200, 200)\nLIGHT_GRAY = (240, 240, 240)\nDARK_GRAY = (100, 100, 100)\nRED = (220, 53, 69)\nGREEN = (40, 167, 69)\nBLUE = (0, 123, 255)\nYELLOW = (255, 193, 7)\nORANGE = (253, 126, 20)\nPURPLE = (111, 66, 193)",
+        "detail": "visualize",
+        "documentation": {}
+    },
+    {
+        "label": "GRAY",
+        "kind": 5,
+        "importPath": "visualize",
+        "description": "visualize",
+        "peekOfCode": "GRAY = (200, 200, 200)\nLIGHT_GRAY = (240, 240, 240)\nDARK_GRAY = (100, 100, 100)\nRED = (220, 53, 69)\nGREEN = (40, 167, 69)\nBLUE = (0, 123, 255)\nYELLOW = (255, 193, 7)\nORANGE = (253, 126, 20)\nPURPLE = (111, 66, 193)\nLIGHT_RED = (255, 200, 200)",
+        "detail": "visualize",
+        "documentation": {}
+    },
+    {
+        "label": "LIGHT_GRAY",
+        "kind": 5,
+        "importPath": "visualize",
+        "description": "visualize",
+        "peekOfCode": "LIGHT_GRAY = (240, 240, 240)\nDARK_GRAY = (100, 100, 100)\nRED = (220, 53, 69)\nGREEN = (40, 167, 69)\nBLUE = (0, 123, 255)\nYELLOW = (255, 193, 7)\nORANGE = (253, 126, 20)\nPURPLE = (111, 66, 193)\nLIGHT_RED = (255, 200, 200)\nLIGHT_GREEN = (200, 255, 200)",
+        "detail": "visualize",
+        "documentation": {}
+    },
+    {
+        "label": "DARK_GRAY",
+        "kind": 5,
+        "importPath": "visualize",
+        "description": "visualize",
+        "peekOfCode": "DARK_GRAY = (100, 100, 100)\nRED = (220, 53, 69)\nGREEN = (40, 167, 69)\nBLUE = (0, 123, 255)\nYELLOW = (255, 193, 7)\nORANGE = (253, 126, 20)\nPURPLE = (111, 66, 193)\nLIGHT_RED = (255, 200, 200)\nLIGHT_GREEN = (200, 255, 200)\nLIGHT_BLUE = (200, 230, 255)",
+        "detail": "visualize",
+        "documentation": {}
+    },
+    {
+        "label": "RED",
+        "kind": 5,
+        "importPath": "visualize",
+        "description": "visualize",
+        "peekOfCode": "RED = (220, 53, 69)\nGREEN = (40, 167, 69)\nBLUE = (0, 123, 255)\nYELLOW = (255, 193, 7)\nORANGE = (253, 126, 20)\nPURPLE = (111, 66, 193)\nLIGHT_RED = (255, 200, 200)\nLIGHT_GREEN = (200, 255, 200)\nLIGHT_BLUE = (200, 230, 255)\nclass RiskLevel(IntEnum):",
+        "detail": "visualize",
+        "documentation": {}
+    },
+    {
+        "label": "GREEN",
+        "kind": 5,
+        "importPath": "visualize",
+        "description": "visualize",
+        "peekOfCode": "GREEN = (40, 167, 69)\nBLUE = (0, 123, 255)\nYELLOW = (255, 193, 7)\nORANGE = (253, 126, 20)\nPURPLE = (111, 66, 193)\nLIGHT_RED = (255, 200, 200)\nLIGHT_GREEN = (200, 255, 200)\nLIGHT_BLUE = (200, 230, 255)\nclass RiskLevel(IntEnum):\n    LOW = 0",
+        "detail": "visualize",
+        "documentation": {}
+    },
+    {
+        "label": "BLUE",
+        "kind": 5,
+        "importPath": "visualize",
+        "description": "visualize",
+        "peekOfCode": "BLUE = (0, 123, 255)\nYELLOW = (255, 193, 7)\nORANGE = (253, 126, 20)\nPURPLE = (111, 66, 193)\nLIGHT_RED = (255, 200, 200)\nLIGHT_GREEN = (200, 255, 200)\nLIGHT_BLUE = (200, 230, 255)\nclass RiskLevel(IntEnum):\n    LOW = 0\n    MEDIUM = 1",
+        "detail": "visualize",
+        "documentation": {}
+    },
+    {
+        "label": "YELLOW",
+        "kind": 5,
+        "importPath": "visualize",
+        "description": "visualize",
+        "peekOfCode": "YELLOW = (255, 193, 7)\nORANGE = (253, 126, 20)\nPURPLE = (111, 66, 193)\nLIGHT_RED = (255, 200, 200)\nLIGHT_GREEN = (200, 255, 200)\nLIGHT_BLUE = (200, 230, 255)\nclass RiskLevel(IntEnum):\n    LOW = 0\n    MEDIUM = 1\n    HIGH = 2",
+        "detail": "visualize",
+        "documentation": {}
+    },
+    {
+        "label": "ORANGE",
+        "kind": 5,
+        "importPath": "visualize",
+        "description": "visualize",
+        "peekOfCode": "ORANGE = (253, 126, 20)\nPURPLE = (111, 66, 193)\nLIGHT_RED = (255, 200, 200)\nLIGHT_GREEN = (200, 255, 200)\nLIGHT_BLUE = (200, 230, 255)\nclass RiskLevel(IntEnum):\n    LOW = 0\n    MEDIUM = 1\n    HIGH = 2\n    SEVERE = 3",
+        "detail": "visualize",
+        "documentation": {}
+    },
+    {
+        "label": "PURPLE",
+        "kind": 5,
+        "importPath": "visualize",
+        "description": "visualize",
+        "peekOfCode": "PURPLE = (111, 66, 193)\nLIGHT_RED = (255, 200, 200)\nLIGHT_GREEN = (200, 255, 200)\nLIGHT_BLUE = (200, 230, 255)\nclass RiskLevel(IntEnum):\n    LOW = 0\n    MEDIUM = 1\n    HIGH = 2\n    SEVERE = 3\nclass HealthcareVisualizer:",
+        "detail": "visualize",
+        "documentation": {}
+    },
+    {
+        "label": "LIGHT_RED",
+        "kind": 5,
+        "importPath": "visualize",
+        "description": "visualize",
+        "peekOfCode": "LIGHT_RED = (255, 200, 200)\nLIGHT_GREEN = (200, 255, 200)\nLIGHT_BLUE = (200, 230, 255)\nclass RiskLevel(IntEnum):\n    LOW = 0\n    MEDIUM = 1\n    HIGH = 2\n    SEVERE = 3\nclass HealthcareVisualizer:\n    def __init__(self, use_trained_model=False, model_path=None):",
+        "detail": "visualize",
+        "documentation": {}
+    },
+    {
+        "label": "LIGHT_GREEN",
+        "kind": 5,
+        "importPath": "visualize",
+        "description": "visualize",
+        "peekOfCode": "LIGHT_GREEN = (200, 255, 200)\nLIGHT_BLUE = (200, 230, 255)\nclass RiskLevel(IntEnum):\n    LOW = 0\n    MEDIUM = 1\n    HIGH = 2\n    SEVERE = 3\nclass HealthcareVisualizer:\n    def __init__(self, use_trained_model=False, model_path=None):\n        self.screen = pygame.display.set_mode((WINDOW_WIDTH, WINDOW_HEIGHT))",
+        "detail": "visualize",
+        "documentation": {}
+    },
+    {
+        "label": "LIGHT_BLUE",
+        "kind": 5,
+        "importPath": "visualize",
+        "description": "visualize",
+        "peekOfCode": "LIGHT_BLUE = (200, 230, 255)\nclass RiskLevel(IntEnum):\n    LOW = 0\n    MEDIUM = 1\n    HIGH = 2\n    SEVERE = 3\nclass HealthcareVisualizer:\n    def __init__(self, use_trained_model=False, model_path=None):\n        self.screen = pygame.display.set_mode((WINDOW_WIDTH, WINDOW_HEIGHT))\n        pygame.display.set_caption(\"AI-Veins: Healthcare Resource Allocation - Live Agent\")",
+        "detail": "visualize",
+        "documentation": {}
+    }
+]

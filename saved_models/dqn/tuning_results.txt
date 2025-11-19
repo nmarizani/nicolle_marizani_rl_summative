@@ -1,0 +1,65 @@
+DQN Hyperparameter Tuning Results
+============================================================
+
+Configuration 1:
+  {'learning_rate': 0.001, 'gamma': 0.99, 'batch_size': 32, 'buffer_size': 50000}
+  Avg Reward: 7062.00
+  Avg Detections: 25.80
+  Avg Severe: 0.20
+
+Configuration 2:
+  {'learning_rate': 0.0005, 'gamma': 0.99, 'batch_size': 32, 'buffer_size': 50000}
+  Avg Reward: 4570.00
+  Avg Detections: 18.40
+  Avg Severe: 0.00
+
+Configuration 3:
+  {'learning_rate': 0.002, 'gamma': 0.99, 'batch_size': 32, 'buffer_size': 50000}
+  Avg Reward: 1581.00
+  Avg Detections: 0.00
+  Avg Severe: 1.60
+
+Configuration 4:
+  {'learning_rate': 0.001, 'gamma': 0.95, 'batch_size': 32, 'buffer_size': 50000}
+  Avg Reward: 8022.00
+  Avg Detections: 29.80
+  Avg Severe: 0.00
+
+Configuration 5:
+  {'learning_rate': 0.001, 'gamma': 0.995, 'batch_size': 32, 'buffer_size': 50000}
+  Avg Reward: 9060.00
+  Avg Detections: 48.80
+  Avg Severe: 0.00
+
+Configuration 6:
+  {'learning_rate': 0.001, 'gamma': 0.99, 'batch_size': 64, 'buffer_size': 50000}
+  Avg Reward: 7763.00
+  Avg Detections: 28.20
+  Avg Severe: 0.00
+
+Configuration 7:
+  {'learning_rate': 0.001, 'gamma': 0.99, 'batch_size': 16, 'buffer_size': 50000}
+  Avg Reward: 7985.00
+  Avg Detections: 27.80
+  Avg Severe: 0.00
+
+Configuration 8:
+  {'learning_rate': 0.001, 'gamma': 0.99, 'batch_size': 32, 'buffer_size': 100000}
+  Avg Reward: 4964.00
+  Avg Detections: 41.00
+  Avg Severe: 0.80
+
+Configuration 9:
+  {'learning_rate': 0.0005, 'gamma': 0.995, 'batch_size': 64, 'buffer_size': 100000}
+  Avg Reward: 4574.00
+  Avg Detections: 36.60
+  Avg Severe: 0.60
+
+Configuration 10:
+  {'learning_rate': 0.002, 'gamma': 0.95, 'batch_size': 16, 'buffer_size': 30000}
+  Avg Reward: 4154.00
+  Avg Detections: 32.40
+  Avg Severe: 3.00
+
+
+Best: Configuration 5

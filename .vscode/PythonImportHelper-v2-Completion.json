@@ -17,39 +17,6 @@
         "documentation": {}
     },
     {
-        "label": "numpy",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "numpy",
-        "description": "numpy",
-        "detail": "numpy",
-        "documentation": {}
-    },
-    {
-        "label": "IntEnum",
-        "importPath": "enum",
-        "description": "enum",
-        "isExtraImport": true,
-        "detail": "enum",
-        "documentation": {}
-    },
-    {
-        "label": "IntEnum",
-        "importPath": "enum",
-        "description": "enum",
-        "isExtraImport": true,
-        "detail": "enum",
-        "documentation": {}
-    },
-    {
-        "label": "register",
-        "importPath": "gymnasium.envs.registration",
-        "description": "gymnasium.envs.registration",
-        "isExtraImport": true,
-        "detail": "gymnasium.envs.registration",
-        "documentation": {}
-    },
-    {
         "label": "healthcare_env",
         "kind": 6,
         "isExtraImport": true,
@@ -59,12 +26,45 @@
         "documentation": {}
     },
     {
+        "label": "numpy",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "numpy",
+        "description": "numpy",
+        "detail": "numpy",
+        "documentation": {}
+    },
+    {
         "label": "matplotlib.pyplot",
         "kind": 6,
         "isExtraImport": true,
         "importPath": "matplotlib.pyplot",
         "description": "matplotlib.pyplot",
         "detail": "matplotlib.pyplot",
+        "documentation": {}
+    },
+    {
+        "label": "DQN",
+        "importPath": "stable_baselines3",
+        "description": "stable_baselines3",
+        "isExtraImport": true,
+        "detail": "stable_baselines3",
+        "documentation": {}
+    },
+    {
+        "label": "PPO",
+        "importPath": "stable_baselines3",
+        "description": "stable_baselines3",
+        "isExtraImport": true,
+        "detail": "stable_baselines3",
+        "documentation": {}
+    },
+    {
+        "label": "A2C",
+        "importPath": "stable_baselines3",
+        "description": "stable_baselines3",
+        "isExtraImport": true,
+        "detail": "stable_baselines3",
         "documentation": {}
     },
     {
@@ -89,6 +89,48 @@
         "description": "stable_baselines3",
         "isExtraImport": true,
         "detail": "stable_baselines3",
+        "documentation": {}
+    },
+    {
+        "label": "torch",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "torch",
+        "description": "torch",
+        "detail": "torch",
+        "documentation": {}
+    },
+    {
+        "label": "torch.nn",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "torch.nn",
+        "description": "torch.nn",
+        "detail": "torch.nn",
+        "documentation": {}
+    },
+    {
+        "label": "IntEnum",
+        "importPath": "enum",
+        "description": "enum",
+        "isExtraImport": true,
+        "detail": "enum",
+        "documentation": {}
+    },
+    {
+        "label": "IntEnum",
+        "importPath": "enum",
+        "description": "enum",
+        "isExtraImport": true,
+        "detail": "enum",
+        "documentation": {}
+    },
+    {
+        "label": "register",
+        "importPath": "gymnasium.envs.registration",
+        "description": "gymnasium.envs.registration",
+        "isExtraImport": true,
+        "detail": "gymnasium.envs.registration",
         "documentation": {}
     },
     {
@@ -173,24 +215,6 @@
         "documentation": {}
     },
     {
-        "label": "torch",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "torch",
-        "description": "torch",
-        "detail": "torch",
-        "documentation": {}
-    },
-    {
-        "label": "torch.nn",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "torch.nn",
-        "description": "torch.nn",
-        "detail": "torch.nn",
-        "documentation": {}
-    },
-    {
         "label": "torch.optim",
         "kind": 6,
         "isExtraImport": true,
@@ -214,6 +238,69 @@
         "importPath": "pygame",
         "description": "pygame",
         "detail": "pygame",
+        "documentation": {}
+    },
+    {
+        "label": "PolicyNetwork",
+        "kind": 6,
+        "importPath": "compare_models",
+        "description": "compare_models",
+        "peekOfCode": "class PolicyNetwork(nn.Module):\n    def __init__(self, obs_dim, action_dim, hidden_size=128):\n        super(PolicyNetwork, self).__init__()\n        self.fc1 = nn.Linear(obs_dim, hidden_size)\n        self.fc2 = nn.Linear(hidden_size, hidden_size)\n        self.fc3 = nn.Linear(hidden_size, action_dim)\n    def forward(self, x):\n        x = torch.relu(self.fc1(x))\n        x = torch.relu(self.fc2(x))\n        x = self.fc3(x)",
+        "detail": "compare_models",
+        "documentation": {}
+    },
+    {
+        "label": "REINFORCEAgent",
+        "kind": 6,
+        "importPath": "compare_models",
+        "description": "compare_models",
+        "peekOfCode": "class REINFORCEAgent:\n    def __init__(self, obs_dim, action_dim, hidden_size=128):\n        self.policy = PolicyNetwork(obs_dim, action_dim, hidden_size)\n    def select_action(self, state, deterministic=True):\n        state = torch.FloatTensor(state).unsqueeze(0)\n        probs = self.policy(state)\n        if deterministic:\n            action = torch.argmax(probs, dim=1).item()\n        else:\n            dist = torch.distributions.Categorical(probs)",
+        "detail": "compare_models",
+        "documentation": {}
+    },
+    {
+        "label": "evaluate_model",
+        "kind": 2,
+        "importPath": "compare_models",
+        "description": "compare_models",
+        "peekOfCode": "def evaluate_model(model, model_name, num_episodes=20):\n    \"\"\"Evaluate a trained model\"\"\"\n    env = gym.make('HealthcareEnv-v0')\n    episode_rewards = []\n    episode_detections = []\n    episode_severe = []\n    episode_dropped = []\n    episode_lengths = []\n    print(f\"\\nEvaluating {model_name}...\")\n    for episode in range(num_episodes):",
+        "detail": "compare_models",
+        "documentation": {}
+    },
+    {
+        "label": "load_models",
+        "kind": 2,
+        "importPath": "compare_models",
+        "description": "compare_models",
+        "peekOfCode": "def load_models():\n    \"\"\"Load all trained models\"\"\"\n    models = {}\n    # Load DQN\n    try:\n        models['DQN'] = DQN.load(\"saved_models/dqn/dqn_model.zip\")\n        print(\"✓ Loaded DQN model\")\n    except Exception as e:\n        print(f\"✗ Could not load DQN: {e}\")\n    # Load PPO",
+        "detail": "compare_models",
+        "documentation": {}
+    },
+    {
+        "label": "compare_all_models",
+        "kind": 2,
+        "importPath": "compare_models",
+        "description": "compare_models",
+        "peekOfCode": "def compare_all_models(num_episodes=20):\n    \"\"\"Compare all trained models\"\"\"\n    print(\"=\"*80)\n    print(\"COMPARING ALL TRAINED MODELS\")\n    print(\"=\"*80)\n    # Load models\n    models = load_models()\n    if not models:\n        print(\"\\n✗ No models found! Please train models first.\")\n        return",
+        "detail": "compare_models",
+        "documentation": {}
+    },
+    {
+        "label": "plot_comparison",
+        "kind": 2,
+        "importPath": "compare_models",
+        "description": "compare_models",
+        "peekOfCode": "def plot_comparison(results):\n    \"\"\"Create comparison plots\"\"\"\n    fig, axes = plt.subplots(2, 2, figsize=(15, 10))\n    fig.suptitle('Model Comparison - Healthcare Resource Allocation', fontsize=16, fontweight='bold')\n    models = [r['model_name'] for r in results]\n    colors = ['#1f77b4', '#ff7f0e', '#2ca02c', '#d62728']\n    # 1. Average Rewards\n    ax1 = axes[0, 0]\n    avg_rewards = [r['avg_reward'] for r in results]\n    std_rewards = [r['std_reward'] for r in results]",
+        "detail": "compare_models",
+        "documentation": {}
+    },
+    {
+        "label": "save_results",
+        "kind": 2,
+        "importPath": "compare_models",
+        "description": "compare_models",
+        "peekOfCode": "def save_results(results):\n    \"\"\"Save comparison results to file\"\"\"\n    with open('model_comparison_results.txt', 'w') as f:\n        f.write(\"=\"*80 + \"\\n\")\n        f.write(\"MODEL COMPARISON RESULTS\\n\")\n        f.write(\"Healthcare Resource Allocation - AI-Veins Project\\n\")\n        f.write(\"=\"*80 + \"\\n\\n\")\n        for result in results:\n            f.write(f\"\\n{result['model_name']} Model:\\n\")\n            f.write(\"-\" * 40 + \"\\n\")",
+        "detail": "compare_models",
         "documentation": {}
     },
     {
@@ -374,7 +461,7 @@
         "kind": 2,
         "importPath": "train_reinforcement",
         "description": "train_reinforcement",
-        "peekOfCode": "def evaluate_model(model_path, num_episodes=10):\n    \"\"\"Evaluate trained REINFORCE model\"\"\"\n    print(\"\\n\" + \"=\"*60)\n    print(\"EVALUATING REINFORCE MODEL\")\n    print(\"=\"*60)\n    # Create environment\n    env = gym.make('HealthcareEnv-v0')\n    # Create and load agent\n    obs_dim = env.observation_space.shape[0]\n    action_dim = env.action_space.n",
+        "peekOfCode": "def evaluate_model(model_path, num_episodes=10):\n    print(\"\\n\" + \"=\"*60)\n    print(\"EVALUATING REINFORCE MODEL\")\n    print(\"=\"*60)\n    # Create environment\n    env = gym.make('HealthcareEnv-v0')\n    # Auto-detect hidden size from checkpoint\n    checkpoint = torch.load(model_path)\n    hidden_size = checkpoint['policy_state_dict']['fc1.weight'].shape[0]\n    # Create agent with correct architecture",
         "detail": "train_reinforcement",
         "documentation": {}
     },

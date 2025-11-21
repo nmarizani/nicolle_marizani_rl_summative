@@ -189,18 +189,21 @@ def train_reinforce(
     return agent
 
 def evaluate_model(model_path, num_episodes=10):
-    """Evaluate trained REINFORCE model"""
     print("\n" + "="*60)
     print("EVALUATING REINFORCE MODEL")
     print("="*60)
-    
+
     # Create environment
     env = gym.make('HealthcareEnv-v0')
-    
-    # Create and load agent
+
+    # Auto-detect hidden size from checkpoint
+    checkpoint = torch.load(model_path)
+    hidden_size = checkpoint['policy_state_dict']['fc1.weight'].shape[0]
+
+    # Create agent with correct architecture
     obs_dim = env.observation_space.shape[0]
     action_dim = env.action_space.n
-    agent = REINFORCEAgent(obs_dim, action_dim)
+    agent = REINFORCEAgent(obs_dim, action_dim, hidden_size=hidden_size)
     agent.load(model_path)
     
     episode_rewards = []

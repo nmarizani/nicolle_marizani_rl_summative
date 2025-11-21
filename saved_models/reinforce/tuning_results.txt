@@ -1,0 +1,45 @@
+REINFORCE Hyperparameter Tuning Results
+============================================================
+
+Configuration 1:
+  {'learning_rate': 0.001, 'gamma': 0.99, 'hidden_size': 128}
+  Avg Reward: 6852.00
+
+Configuration 2:
+  {'learning_rate': 0.0005, 'gamma': 0.99, 'hidden_size': 128}
+  Avg Reward: 4844.00
+
+Configuration 3:
+  {'learning_rate': 0.002, 'gamma': 0.99, 'hidden_size': 128}
+  Avg Reward: 4612.00
+
+Configuration 4:
+  {'learning_rate': 0.001, 'gamma': 0.95, 'hidden_size': 128}
+  Avg Reward: 7780.00
+
+Configuration 5:
+  {'learning_rate': 0.001, 'gamma': 0.995, 'hidden_size': 128}
+  Avg Reward: 5184.00
+
+Configuration 6:
+  {'learning_rate': 0.001, 'gamma': 0.99, 'hidden_size': 64}
+  Avg Reward: 4640.00
+
+Configuration 7:
+  {'learning_rate': 0.001, 'gamma': 0.99, 'hidden_size': 256}
+  Avg Reward: 5658.00
+
+Configuration 8:
+  {'learning_rate': 0.001, 'gamma': 0.99, 'hidden_size': 512}
+  Avg Reward: 5612.00
+
+Configuration 9:
+  {'learning_rate': 0.0005, 'gamma': 0.995, 'hidden_size': 256}
+  Avg Reward: 4602.00
+
+Configuration 10:
+  {'learning_rate': 0.002, 'gamma': 0.95, 'hidden_size': 64}
+  Avg Reward: 8724.00
+
+
+Best: Configuration 10

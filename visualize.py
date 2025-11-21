@@ -61,7 +61,20 @@ class HealthcareVisualizer:
         if use_trained_model and model_path:
             try:
                 from stable_baselines3 import PPO, DQN, A2C
-                # Try to load model (will implement after training)
+                import os
+                
+                # Handle different path formats
+                if os.path.isfile(model_path):
+                    # Already a valid file
+                    pass
+                elif os.path.isdir(model_path):
+                    # It's a directory, look for best_model.zip inside
+                    model_path = os.path.join(model_path, "best_model.zip")
+                elif not model_path.endswith('.zip'):
+                    # Add .zip extension
+                    model_path = model_path + '.zip'
+                
+                # Try to load model
                 if 'ppo' in model_path.lower():
                     self.model = PPO.load(model_path)
                 elif 'dqn' in model_path.lower():

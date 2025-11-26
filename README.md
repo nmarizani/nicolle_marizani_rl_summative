@@ -27,6 +27,7 @@ African clinics often face:
 This RL system supports SDG 3 by optimizing scarce resources for early intervention.
 
 ## Project Structure
+
 project/
 ├── healthcare_env.py
 ├── visualize.py
@@ -41,10 +42,10 @@ project/
 
 ## Installation
 pip install --user -r requirements.txt
+
 python verify_setup.py
 
-## Quick Start
-Test environment
+## Test environment
 python healthcare_env.py
 
 ## Run baseline random agent
@@ -57,15 +58,16 @@ python train_ppo.py
 python visualize.py saved_models/ppo/ppo_model.zip
 
 ## Best Model Summary
-Rank	Model	Reward	Severe Cases	Notes
- 1	A2C	10082	0.2	Most stable, best balance
- 2	DQN	9060	0	Highest detections
- 3	REINFORCE	8724	0.5	Simple & effective
- 4	PPO	7744	0.3	Good baseline
+
+| Rank | Model      | Reward | Severe Cases | Notes                    |
+|------|-----------|--------|--------------|--------------------------|
+| 1    | A2C       | 10082  | 0.2          | Most stable, best balance|
+| 2    | DQN       | 9060   | 0            | Highest detections       |
+| 3    | REINFORCE | 8724   | 0.5          | Simple & effective       |
+| 4    | PPO       | 7744   | 0.3          | Good baseline            |
 
 ## Run the Best Model (A2C)
 python visualize.py saved_models/a2c/a2c_model.zip
-
 
 ## Or evaluate all models:
 

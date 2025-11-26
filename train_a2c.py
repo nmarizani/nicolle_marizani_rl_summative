@@ -1,8 +1,3 @@
-"""
-train_a2c.py - Train A2C (Advantage Actor-Critic) agent
-Synchronous advantage actor-critic algorithm
-"""
-
 import gymnasium as gym
 import healthcare_env
 from stable_baselines3 import A2C

@@ -1,8 +1,3 @@
-"""
-train_dqn.py - Train DQN (Deep Q-Network) agent
-Value-based reinforcement learning algorithm
-"""
-
 import gymnasium as gym
 import healthcare_env
 from stable_baselines3 import DQN

@@ -1,8 +1,3 @@
-"""
-visualize.py - Pygame visualization for healthcare environment
-Watch the agent perform actions in real-time with visual feedback
-"""
-
 import pygame
 import gymnasium as gym
 import healthcare_env

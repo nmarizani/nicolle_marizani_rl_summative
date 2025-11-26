@@ -1,8 +1,3 @@
-"""
-train_reinforce.py - Train REINFORCE agent
-Monte Carlo policy gradient algorithm (custom implementation)
-"""
-
 import gymnasium as gym
 import healthcare_env
 import torch

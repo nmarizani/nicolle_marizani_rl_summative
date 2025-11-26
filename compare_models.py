@@ -1,8 +1,3 @@
-"""
-compare_models.py - Compare performance of all trained RL models
-Evaluates DQN, PPO, A2C, and REINFORCE side-by-side
-"""
-
 import gymnasium as gym
 import healthcare_env
 import numpy as np

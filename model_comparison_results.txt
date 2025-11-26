@@ -1,0 +1,42 @@
+================================================================================
+MODEL COMPARISON RESULTS
+Healthcare Resource Allocation - AI-Veins Project
+================================================================================
+
+
+DQN Model:
+----------------------------------------
+  Average Reward:      7836.00 ± 650.88
+  Average Detections:  28.95
+  Average Severe:      0.15
+  Average Dropped:     0.35
+  Average Episode Length: 84.3 days
+
+PPO Model:
+----------------------------------------
+  Average Reward:      4976.00 ± 1369.90
+  Average Detections:  32.50
+  Average Severe:      2.45
+  Average Dropped:     17.75
+  Average Episode Length: 90.0 days
+
+A2C Model:
+----------------------------------------
+  Average Reward:      9877.00 ± 1301.27
+  Average Detections:  53.15
+  Average Severe:      0.00
+  Average Dropped:     0.00
+  Average Episode Length: 90.0 days
+
+REINFORCE Model:
+----------------------------------------
+  Average Reward:      4002.00 ± 450.55
+  Average Detections:  4.40
+  Average Severe:      0.10
+  Average Dropped:     0.00
+  Average Episode Length: 75.0 days
+
+================================================================================
+BEST PERFORMING MODEL: A2C
+  Average Reward: 9877.00
+================================================================================

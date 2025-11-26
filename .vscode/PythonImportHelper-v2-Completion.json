@@ -134,6 +134,15 @@
         "documentation": {}
     },
     {
+        "label": "seaborn",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "seaborn",
+        "description": "seaborn",
+        "detail": "seaborn",
+        "documentation": {}
+    },
+    {
         "label": "EvalCallback",
         "importPath": "stable_baselines3.common.callbacks",
         "description": "stable_baselines3.common.callbacks",
@@ -319,6 +328,132 @@
         "description": "healthcare_env",
         "peekOfCode": "class HealthcareEnvironment(gym.Env):\n    \"\"\"\n    Healthcare Resource Allocation Environment\n    Observation Space:\n        - Day (0-89): Current day of simulation\n        - Budget remaining (0-10000): Dollars left\n        - Nurses available (0-5): Staff count\n        - Mobile units available (0-2): Equipment count\n        - Doppler machines available (0-3): Equipment count\n        - Patient queue (next 5 patients): Each has [risk_level, symptoms, wait_days, distance]",
         "detail": "healthcare_env",
+        "documentation": {}
+    },
+    {
+        "label": "generate_training_curve",
+        "kind": 2,
+        "importPath": "report_plots",
+        "description": "report_plots",
+        "peekOfCode": "def generate_training_curve(final_reward, convergence_ep, variance):\n    \"\"\"Generate realistic training curve\"\"\"\n    curve = []\n    for ep in episodes:\n        if ep < convergence_ep:\n            progress = ep / convergence_ep\n            reward = final_reward * (1 - np.exp(-3 * progress))\n            noise = np.random.normal(0, variance * (1 - progress))\n        else:\n            reward = final_reward",
+        "detail": "report_plots",
+        "documentation": {}
+    },
+    {
+        "label": "plot_cumulative_rewards",
+        "kind": 2,
+        "importPath": "report_plots",
+        "description": "report_plots",
+        "peekOfCode": "def plot_cumulative_rewards():\n    fig, axes = plt.subplots(2, 2, figsize=(15, 10))\n    fig.suptitle('Cumulative Rewards During Training - All Methods', fontsize=16, fontweight='bold')\n    colors = {'A2C': '#2E7D32', 'DQN': '#1976D2', 'REINFORCE': '#D32F2F', 'PPO': '#F57C00'}\n    # A2C\n    axes[0, 0].plot(episodes, a2c_curve, color=colors['A2C'], linewidth=2, label='A2C')\n    axes[0, 0].axhline(y=10082, color='gray', linestyle='--', alpha=0.5, label='Best: 10,082')\n    axes[0, 0].fill_between(episodes, a2c_curve - 850, a2c_curve + 850, alpha=0.2, color=colors['A2C'])\n    axes[0, 0].set_title('A2C (Best: 10,082)', fontsize=12, fontweight='bold')\n    axes[0, 0].set_xlabel('Episodes')",
+        "detail": "report_plots",
+        "documentation": {}
+    },
+    {
+        "label": "plot_training_stability",
+        "kind": 2,
+        "importPath": "report_plots",
+        "description": "report_plots",
+        "peekOfCode": "def plot_training_stability():\n    fig, axes = plt.subplots(1, 2, figsize=(15, 5))\n    fig.suptitle('Training Stability Analysis', fontsize=16, fontweight='bold')\n    # DQN Loss Curve\n    loss_episodes = np.arange(0, 500, 5)\n    dqn_loss = 150 * np.exp(-loss_episodes / 100) + 20 + np.random.normal(0, 5, len(loss_episodes))\n    axes[0].plot(loss_episodes, dqn_loss, color='#1976D2', linewidth=2)\n    axes[0].set_title('DQN: TD-Error Loss Over Training', fontsize=12, fontweight='bold')\n    axes[0].set_xlabel('Episodes')\n    axes[0].set_ylabel('Huber Loss')",
+        "detail": "report_plots",
+        "documentation": {}
+    },
+    {
+        "label": "plot_convergence",
+        "kind": 2,
+        "importPath": "report_plots",
+        "description": "report_plots",
+        "peekOfCode": "def plot_convergence():\n    fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(15, 5))\n    fig.suptitle('Convergence Analysis', fontsize=16, fontweight='bold')\n    algorithms = ['A2C', 'DQN', 'REINFORCE', 'PPO']\n    episodes_to_converge = [300, 450, 700, 400]\n    training_time = [12, 15, 23, 14]\n    colors = ['#2E7D32', '#1976D2', '#D32F2F', '#F57C00']\n    # Episodes to convergence\n    bars1 = ax1.bar(algorithms, episodes_to_converge, color=colors, alpha=0.7)\n    ax1.set_title('Episodes to Convergence (90% Max Reward)', fontsize=12, fontweight='bold')",
+        "detail": "report_plots",
+        "documentation": {}
+    },
+    {
+        "label": "plot_generalization",
+        "kind": 2,
+        "importPath": "report_plots",
+        "description": "report_plots",
+        "peekOfCode": "def plot_generalization():\n    fig, axes = plt.subplots(1, 2, figsize=(15, 5))\n    fig.suptitle('Generalization to Unseen States', fontsize=16, fontweight='bold')\n    algorithms = ['A2C', 'REINFORCE', 'DQN', 'PPO']\n    seen_rewards = [10082, 8724, 9060, 7744]\n    unseen_rewards = [9450, 7950, 8200, 7100]\n    colors = ['#2E7D32', '#D32F2F', '#1976D2', '#F57C00']\n    x = np.arange(len(algorithms))\n    width = 0.35\n    # Reward comparison",
+        "detail": "report_plots",
+        "documentation": {}
+    },
+    {
+        "label": "plot_performance_summary",
+        "kind": 2,
+        "importPath": "report_plots",
+        "description": "report_plots",
+        "peekOfCode": "def plot_performance_summary():\n    fig, ax = plt.subplots(figsize=(12, 8))\n    algorithms = ['A2C', 'REINFORCE', 'DQN', 'PPO']\n    rewards = [10082, 8724, 9060, 7744]\n    colors = ['#2E7D32', '#D32F2F', '#1976D2', '#F57C00']\n    # Sort by reward\n    sorted_data = sorted(zip(algorithms, rewards, colors), key=lambda x: x[1], reverse=True)\n    algs_sorted, rewards_sorted, colors_sorted = zip(*sorted_data)\n    bars = ax.barh(algs_sorted, rewards_sorted, color=colors_sorted, alpha=0.8)\n    ax.set_title('Final Algorithm Performance Comparison', fontsize=16, fontweight='bold')",
+        "detail": "report_plots",
+        "documentation": {}
+    },
+    {
+        "label": "plt.rcParams['figure.figsize']",
+        "kind": 5,
+        "importPath": "report_plots",
+        "description": "report_plots",
+        "peekOfCode": "plt.rcParams['figure.figsize'] = (15, 10)\nplt.rcParams['font.size'] = 10\n# Results from hyperparameter tuning\nresults = {\n    'A2C': 10082,\n    'DQN': 9060,\n    'REINFORCE': 8724,\n    'PPO': 7744\n}\n# Simulated training curves (replace with actual if available)",
+        "detail": "report_plots",
+        "documentation": {}
+    },
+    {
+        "label": "plt.rcParams['font.size']",
+        "kind": 5,
+        "importPath": "report_plots",
+        "description": "report_plots",
+        "peekOfCode": "plt.rcParams['font.size'] = 10\n# Results from hyperparameter tuning\nresults = {\n    'A2C': 10082,\n    'DQN': 9060,\n    'REINFORCE': 8724,\n    'PPO': 7744\n}\n# Simulated training curves (replace with actual if available)\nnp.random.seed(42)",
+        "detail": "report_plots",
+        "documentation": {}
+    },
+    {
+        "label": "results",
+        "kind": 5,
+        "importPath": "report_plots",
+        "description": "report_plots",
+        "peekOfCode": "results = {\n    'A2C': 10082,\n    'DQN': 9060,\n    'REINFORCE': 8724,\n    'PPO': 7744\n}\n# Simulated training curves (replace with actual if available)\nnp.random.seed(42)\nepisodes = np.arange(0, 1000, 10)\ndef generate_training_curve(final_reward, convergence_ep, variance):",
+        "detail": "report_plots",
+        "documentation": {}
+    },
+    {
+        "label": "episodes",
+        "kind": 5,
+        "importPath": "report_plots",
+        "description": "report_plots",
+        "peekOfCode": "episodes = np.arange(0, 1000, 10)\ndef generate_training_curve(final_reward, convergence_ep, variance):\n    \"\"\"Generate realistic training curve\"\"\"\n    curve = []\n    for ep in episodes:\n        if ep < convergence_ep:\n            progress = ep / convergence_ep\n            reward = final_reward * (1 - np.exp(-3 * progress))\n            noise = np.random.normal(0, variance * (1 - progress))\n        else:",
+        "detail": "report_plots",
+        "documentation": {}
+    },
+    {
+        "label": "a2c_curve",
+        "kind": 5,
+        "importPath": "report_plots",
+        "description": "report_plots",
+        "peekOfCode": "a2c_curve = generate_training_curve(10082, 300, 800)\ndqn_curve = generate_training_curve(9060, 450, 1100)\nreinforce_curve = generate_training_curve(8724, 700, 1400)\nppo_curve = generate_training_curve(7744, 400, 740)\n# PLOT 1: Cumulative Rewards Comparison\ndef plot_cumulative_rewards():\n    fig, axes = plt.subplots(2, 2, figsize=(15, 10))\n    fig.suptitle('Cumulative Rewards During Training - All Methods', fontsize=16, fontweight='bold')\n    colors = {'A2C': '#2E7D32', 'DQN': '#1976D2', 'REINFORCE': '#D32F2F', 'PPO': '#F57C00'}\n    # A2C",
+        "detail": "report_plots",
+        "documentation": {}
+    },
+    {
+        "label": "dqn_curve",
+        "kind": 5,
+        "importPath": "report_plots",
+        "description": "report_plots",
+        "peekOfCode": "dqn_curve = generate_training_curve(9060, 450, 1100)\nreinforce_curve = generate_training_curve(8724, 700, 1400)\nppo_curve = generate_training_curve(7744, 400, 740)\n# PLOT 1: Cumulative Rewards Comparison\ndef plot_cumulative_rewards():\n    fig, axes = plt.subplots(2, 2, figsize=(15, 10))\n    fig.suptitle('Cumulative Rewards During Training - All Methods', fontsize=16, fontweight='bold')\n    colors = {'A2C': '#2E7D32', 'DQN': '#1976D2', 'REINFORCE': '#D32F2F', 'PPO': '#F57C00'}\n    # A2C\n    axes[0, 0].plot(episodes, a2c_curve, color=colors['A2C'], linewidth=2, label='A2C')",
+        "detail": "report_plots",
+        "documentation": {}
+    },
+    {
+        "label": "reinforce_curve",
+        "kind": 5,
+        "importPath": "report_plots",
+        "description": "report_plots",
+        "peekOfCode": "reinforce_curve = generate_training_curve(8724, 700, 1400)\nppo_curve = generate_training_curve(7744, 400, 740)\n# PLOT 1: Cumulative Rewards Comparison\ndef plot_cumulative_rewards():\n    fig, axes = plt.subplots(2, 2, figsize=(15, 10))\n    fig.suptitle('Cumulative Rewards During Training - All Methods', fontsize=16, fontweight='bold')\n    colors = {'A2C': '#2E7D32', 'DQN': '#1976D2', 'REINFORCE': '#D32F2F', 'PPO': '#F57C00'}\n    # A2C\n    axes[0, 0].plot(episodes, a2c_curve, color=colors['A2C'], linewidth=2, label='A2C')\n    axes[0, 0].axhline(y=10082, color='gray', linestyle='--', alpha=0.5, label='Best: 10,082')",
+        "detail": "report_plots",
+        "documentation": {}
+    },
+    {
+        "label": "ppo_curve",
+        "kind": 5,
+        "importPath": "report_plots",
+        "description": "report_plots",
+        "peekOfCode": "ppo_curve = generate_training_curve(7744, 400, 740)\n# PLOT 1: Cumulative Rewards Comparison\ndef plot_cumulative_rewards():\n    fig, axes = plt.subplots(2, 2, figsize=(15, 10))\n    fig.suptitle('Cumulative Rewards During Training - All Methods', fontsize=16, fontweight='bold')\n    colors = {'A2C': '#2E7D32', 'DQN': '#1976D2', 'REINFORCE': '#D32F2F', 'PPO': '#F57C00'}\n    # A2C\n    axes[0, 0].plot(episodes, a2c_curve, color=colors['A2C'], linewidth=2, label='A2C')\n    axes[0, 0].axhline(y=10082, color='gray', linestyle='--', alpha=0.5, label='Best: 10,082')\n    axes[0, 0].fill_between(episodes, a2c_curve - 850, a2c_curve + 850, alpha=0.2, color=colors['A2C'])",
+        "detail": "report_plots",
         "documentation": {}
     },
     {

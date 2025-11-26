@@ -1,8 +1,3 @@
-"""
-test_random_agent.py - Test environment with random agent
-Runs complete episodes to verify environment stability
-"""
-
 import gymnasium as gym
 import healthcare_env
 import numpy as np

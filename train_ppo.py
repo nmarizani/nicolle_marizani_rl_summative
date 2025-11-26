@@ -1,8 +1,3 @@
-"""
-train_ppo.py - Train PPO (Proximal Policy Optimization) agent
-Policy gradient method with clipped surrogate objective
-"""
-
 import gymnasium as gym
 import healthcare_env
 from stable_baselines3 import PPO
